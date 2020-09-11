@@ -33,13 +33,13 @@ quantity (String quality) {
       pwr = die2.nextInt(100) + die2.nextInt(100) + 102;
       return pwr;
     case 'B-Class':
-      pwr = die2.nextInt(100) + 1;
+      pwr = die2.nextInt(100) + 101;
       return pwr;
     case 'C-Class':
-      pwr = die2.nextInt(75) + 1;
+      pwr = die2.nextInt(75) + 31;
       return pwr;
     case 'D-Class':
-      pwr = die2.nextInt(50) + 1;
+      pwr = die2.nextInt(50) + 21;
       return pwr;
     default:
       return 'Data Not Found';
