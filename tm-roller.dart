@@ -28,13 +28,13 @@ quantity (String quality) {
   int pwr = roll2.nextInt(4) + 1;
   switch (pwr){
     case 1:
-      mod = "+";
+      mod = "+ (x2)";
       return mod;
     case 2:
-      mod = "++";
+      mod = "++ (x3)";
       return mod;
     case 3:
-      mod = "+++";
+      mod = "+++ (x4)";
       return mod;
     default:
       mod = "(No Modifier)";
@@ -43,7 +43,6 @@ quantity (String quality) {
 }
 
 void main () {
-  print("Type-Moon Circuit Roller. Modifiers multiply the default number by the following - A: 5, B: 4, C: 3, D: 2, E: 1.");
   var die1 = Random();
   var roll = die1.nextInt(19) + 1;
   String clazz = quality(roll);
